@@ -4,6 +4,7 @@ on:
     branches:
     - master
     - change-spellchecking
+    - spellchecking-test
   pull_request:
 
 jobs:
@@ -21,7 +22,7 @@ jobs:
       id: changed_files
       with:
         files: |
-           async-book-ru/**.md
+           async-book-ru/**/*.md
            README.md
     - name: List changed files
       if: steps.changed_files.outputs.any_changed == 'true'
