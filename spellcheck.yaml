@@ -12,7 +12,7 @@ matrix:
       ignores:
       - code
       - pre
-  # sources:
-  # - 'async-book-ru/**/*.md'
-  # - README.md
+  sources:
+  - 'async-book-ru/**/*.md'
+  - README.md
   default_encoding: utf-8
